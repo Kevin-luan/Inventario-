@@ -4,9 +4,6 @@
     <Compile Update="frmCadastrarPessoas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmEditarPessoas.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="frmListaPessoas.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -20,50 +20,64 @@ namespace WinFormsApp1
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-            string nome, email;
+            Pessoas pessoas = new Pessoas();
+
+            {
+                pessoas.nome_pessoas = txbNome.Text;
+                pessoas.email_pessoas = txbEmail.Text;
+            };
+            
+            
 
 
-            nome = txbNome.Text;
-            email = txbEmail.Text;
-            if(nome =="" )
+           
+            if (pessoas.nome_pessoas == "")
             {
                 MessageBox.Show("todos os campos devem ser preenchidos");
                 txbNome.Focus();
             }
-            if (email == "")
+            if (pessoas.email_pessoas == "")
             {
                 MessageBox.Show("todos os campos devem ser preenchidos");
                 txbNome.Focus();
                 txbEmail.Focus();
             }
-            else { 
-            try
+            else
             {
-                using (var conn = Conexao.GetConnection())
+                try
                 {
-                    conn.Open();
-
-                    string sql = "INSERT INTO Pessoas (nome_pessoas, email_pessoas) VALUES (@nome, @email)";
-                    using (var cmd = new MySqlCommand(sql, conn))
+                    using (var conn = Conexao.GetConnection())
                     {
-                        cmd.Parameters.AddWithValue("@nome", nome);
-                        cmd.Parameters.AddWithValue("@email", email);
-                        cmd.ExecuteNonQuery();
+                        conn.Open();
+
+                        string sql = "INSERT INTO Pessoas (nome_pessoas, email_pessoas) VALUES (@nome, @email)";
+                        using (var cmd = new MySqlCommand(sql, conn))
+                        {
+                            cmd.Parameters.AddWithValue("@nome", pessoas.nome_pessoas);
+                            cmd.Parameters.AddWithValue("@email", pessoas.email_pessoas);
+                            cmd.ExecuteNonQuery();
+                        }
                     }
+
+                    MessageBox.Show("Cadastro realizado com sucesso!");
+                    txbNome.Clear();
+                    txbEmail.Clear();
+                    txbNome.Focus();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Erro: " + ex.Message);
                 }
 
-                MessageBox.Show("Cadastro realizado com sucesso!");
-                txbNome.Clear();
-                txbEmail.Clear();
-                txbNome.Focus();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro: " + ex.Message);
             }
 
-            }
+        }
 
+        private void btnFrnListarPessaos_Click(object sender, EventArgs e)
+        {
+            frmListaPessoas frmListaPessoas = new frmListaPessoas();
+            frmListaPessoas.Show();
+            this.Hide();
         }
     }
 

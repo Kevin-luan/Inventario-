@@ -33,6 +33,7 @@
             txbEmail = new TextBox();
             lblEmil = new Label();
             btnCadastrar = new Button();
+            btnFrnListarPessaos = new Button();
             SuspendLayout();
             // 
             // lblNome
@@ -77,11 +78,22 @@
             btnCadastrar.UseVisualStyleBackColor = true;
             btnCadastrar.Click += btnCadastrar_Click;
             // 
+            // btnFrnListarPessaos
+            // 
+            btnFrnListarPessaos.Location = new Point(12, 369);
+            btnFrnListarPessaos.Name = "btnFrnListarPessaos";
+            btnFrnListarPessaos.Size = new Size(135, 48);
+            btnFrnListarPessaos.TabIndex = 5;
+            btnFrnListarPessaos.Text = "Voltar";
+            btnFrnListarPessaos.UseVisualStyleBackColor = true;
+            btnFrnListarPessaos.Click += btnFrnListarPessaos_Click;
+            // 
             // frmCadastrarPessoas
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(512, 429);
+            Controls.Add(btnFrnListarPessaos);
             Controls.Add(btnCadastrar);
             Controls.Add(txbEmail);
             Controls.Add(lblEmil);
@@ -100,5 +112,6 @@
         private TextBox txbEmail;
         private Label lblEmil;
         private Button btnCadastrar;
+        private Button btnFrnListarPessaos;
     }
 }

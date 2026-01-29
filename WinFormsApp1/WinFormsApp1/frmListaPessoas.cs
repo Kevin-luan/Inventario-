@@ -13,10 +13,10 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace WinFormsApp1
 {
-    
+
     public partial class frmListaPessoas : Form
     {
-       
+
 
         public frmListaPessoas()
         {
@@ -60,10 +60,6 @@ namespace WinFormsApp1
                              ler.GetString(1),
                              ler.GetString(2)
 
-
-
-
-
                             };
                             var linha_listview = new ListViewItem(linha);
                             lstPessoas.Items.Add(linha_listview);
@@ -93,34 +89,50 @@ namespace WinFormsApp1
             ListView.SelectedListViewItemCollection ItensSelecionados = lstPessoas.SelectedItems;
             foreach (ListViewItem item in ItensSelecionados)
             {
-                lblIdPessoas.Text = item.SubItems[0].Text;
-                lblNomePessoas.Text = item.SubItems[1].Text;
-                lblEmailPessoas.Text = item.SubItems[2].Text;
-
-
+                txtIdPessoas.Text = item.SubItems[0].Text;
+                txtNomePessoas.Text = item.SubItems[1].Text;
+                txtEmailPessoas.Text = item.SubItems[2].Text;
             }
-            
-            
-
-           
-           
-            
-
-
-
         }
 
-        
 
-        private void btnEditarPessoas_Click(object sender, EventArgs e)
+        private void btnFrmCadastrarPessoas_Click(object sender, EventArgs e)
         {
+            frmCadastrarPessoas frmCadastrar = new frmCadastrarPessoas();
+            frmCadastrar.Show();
+            this.Hide();
+        }
 
+        private void btnExcuirPessoas_Click(object sender, EventArgs e)
+        {
+           
+           
+            Pessoas pessoas = new Pessoas();
+            {
+                pessoas.Id = txtIdPessoas.Text;
+            }
             
+           
+            try
+            {
+                using (var conn = Conexao.GetConnection())
+                {
 
-            frmEditarPessoas editar = new frmEditarPessoas();
-            editar.Show();
+                    conn.Open();
+                    string sql = "DELETE FROM Pessoas WHERE id_pessoas =@Id";
 
+                    using (var cmd = new MySqlCommand(sql, conn)) {
 
+                        cmd.Parameters.AddWithValue("@Id", pessoas.Id);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+
+            }
+            catch (Exception ex) {
+
+                MessageBox.Show("Erro: " + ex.Message);
+            }
         }
     }
 }

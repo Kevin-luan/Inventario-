@@ -31,10 +31,11 @@
             lstPessoas = new ListView();
             btnVoltarfrmMenu = new Button();
             pictureBox1 = new PictureBox();
-            lblIdPessoas = new Label();
-            lblNomePessoas = new Label();
-            lblEmailPessoas = new Label();
-            btnEditarPessoas = new Button();
+            btnFrmCadastrarPessoas = new Button();
+            txtNomePessoas = new TextBox();
+            txtIdPessoas = new TextBox();
+            txtEmailPessoas = new TextBox();
+            btnExcuirPessoas = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -50,7 +51,7 @@
             // 
             // btnVoltarfrmMenu
             // 
-            btnVoltarfrmMenu.Location = new Point(332, 437);
+            btnVoltarfrmMenu.Location = new Point(694, 506);
             btnVoltarfrmMenu.Name = "btnVoltarfrmMenu";
             btnVoltarfrmMenu.Size = new Size(94, 29);
             btnVoltarfrmMenu.TabIndex = 1;
@@ -67,58 +68,58 @@
             pictureBox1.TabIndex = 2;
             pictureBox1.TabStop = false;
             // 
-            // lblIdPessoas
+            // btnFrmCadastrarPessoas
             // 
-            lblIdPessoas.AutoSize = true;
-            lblIdPessoas.BackColor = SystemColors.AppWorkspace;
-            lblIdPessoas.Font = new Font("Arial Narrow", 16.2F);
-            lblIdPessoas.Location = new Point(502, 126);
-            lblIdPessoas.Name = "lblIdPessoas";
-            lblIdPessoas.Size = new Size(75, 33);
-            lblIdPessoas.TabIndex = 3;
-            lblIdPessoas.Text = "aaaaa";
+            btnFrmCadastrarPessoas.Location = new Point(35, 437);
+            btnFrmCadastrarPessoas.Name = "btnFrmCadastrarPessoas";
+            btnFrmCadastrarPessoas.Size = new Size(108, 43);
+            btnFrmCadastrarPessoas.TabIndex = 7;
+            btnFrmCadastrarPessoas.Text = "Adicionar ";
+            btnFrmCadastrarPessoas.UseVisualStyleBackColor = true;
+            btnFrmCadastrarPessoas.Click += btnFrmCadastrarPessoas_Click;
             // 
-            // lblNomePessoas
+            // txtNomePessoas
             // 
-            lblNomePessoas.AutoSize = true;
-            lblNomePessoas.BackColor = SystemColors.AppWorkspace;
-            lblNomePessoas.Font = new Font("Arial Narrow", 16.2F);
-            lblNomePessoas.Location = new Point(502, 197);
-            lblNomePessoas.Name = "lblNomePessoas";
-            lblNomePessoas.Size = new Size(135, 33);
-            lblNomePessoas.TabIndex = 4;
-            lblNomePessoas.Text = "aaaaaaaaaa";
+            txtNomePessoas.Location = new Point(501, 122);
+            txtNomePessoas.Name = "txtNomePessoas";
+            txtNomePessoas.Size = new Size(125, 30);
+            txtNomePessoas.TabIndex = 8;
             // 
-            // lblEmailPessoas
+            // txtIdPessoas
             // 
-            lblEmailPessoas.AutoSize = true;
-            lblEmailPessoas.BackColor = SystemColors.AppWorkspace;
-            lblEmailPessoas.Font = new Font("Arial Narrow", 16.2F);
-            lblEmailPessoas.Location = new Point(502, 257);
-            lblEmailPessoas.Name = "lblEmailPessoas";
-            lblEmailPessoas.Size = new Size(75, 33);
-            lblEmailPessoas.TabIndex = 5;
-            lblEmailPessoas.Text = "aaaaa";
+            txtIdPessoas.Location = new Point(501, 86);
+            txtIdPessoas.Name = "txtIdPessoas";
+            txtIdPessoas.Size = new Size(125, 30);
+            txtIdPessoas.TabIndex = 9;
             // 
-            // btnEditarPessoas
+            // txtEmailPessoas
             // 
-            btnEditarPessoas.Location = new Point(616, 330);
-            btnEditarPessoas.Name = "btnEditarPessoas";
-            btnEditarPessoas.Size = new Size(151, 42);
-            btnEditarPessoas.TabIndex = 6;
-            btnEditarPessoas.Text = "Editar";
-            btnEditarPessoas.UseVisualStyleBackColor = true;
-            btnEditarPessoas.Click += btnEditarPessoas_Click;
+            txtEmailPessoas.Location = new Point(501, 158);
+            txtEmailPessoas.Name = "txtEmailPessoas";
+            txtEmailPessoas.Size = new Size(125, 30);
+            txtEmailPessoas.TabIndex = 10;
+            // 
+            // btnExcuirPessoas
+            // 
+            btnExcuirPessoas.BackColor = Color.IndianRed;
+            btnExcuirPessoas.Location = new Point(501, 273);
+            btnExcuirPessoas.Name = "btnExcuirPessoas";
+            btnExcuirPessoas.Size = new Size(109, 39);
+            btnExcuirPessoas.TabIndex = 11;
+            btnExcuirPessoas.Text = "Deletar";
+            btnExcuirPessoas.UseVisualStyleBackColor = false;
+            btnExcuirPessoas.Click += btnExcuirPessoas_Click;
             // 
             // frmListaPessoas
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 537);
-            Controls.Add(btnEditarPessoas);
-            Controls.Add(lblEmailPessoas);
-            Controls.Add(lblNomePessoas);
-            Controls.Add(lblIdPessoas);
+            Controls.Add(btnExcuirPessoas);
+            Controls.Add(txtEmailPessoas);
+            Controls.Add(txtIdPessoas);
+            Controls.Add(txtNomePessoas);
+            Controls.Add(btnFrmCadastrarPessoas);
             Controls.Add(pictureBox1);
             Controls.Add(btnVoltarfrmMenu);
             Controls.Add(lstPessoas);
@@ -135,9 +136,10 @@
         private ListView lstPessoas;
         private Button btnVoltarfrmMenu;
         private PictureBox pictureBox1;
-        private Label lblIdPessoas;
-        private Label lblNomePessoas;
-        private Label lblEmailPessoas;
-        private Button btnEditarPessoas;
+        private Button btnFrmCadastrarPessoas;
+        private TextBox txtNomePessoas;
+        private TextBox txtIdPessoas;
+        private TextBox txtEmailPessoas;
+        private Button btnExcuirPessoas;
     }
 }
