@@ -86,12 +86,17 @@ namespace WinFormsApp1
 
         private void lstPessoas_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
         {
+            Pessoas pessoas = new Pessoas();
+            int id_selecionado;
             ListView.SelectedListViewItemCollection ItensSelecionados = lstPessoas.SelectedItems;
             foreach (ListViewItem item in ItensSelecionados)
             {
+
                 txtIdPessoas.Text = item.SubItems[0].Text;
                 txtNomePessoas.Text = item.SubItems[1].Text;
                 txtEmailPessoas.Text = item.SubItems[2].Text;
+
+                id_selecionado = Convert.ToInt32(item.SubItems[0].Text);
             }
         }
 
@@ -105,14 +110,14 @@ namespace WinFormsApp1
 
         private void btnExcuirPessoas_Click(object sender, EventArgs e)
         {
-           
-           
+
+
             Pessoas pessoas = new Pessoas();
             {
                 pessoas.Id = txtIdPessoas.Text;
             }
-            
-           
+
+
             try
             {
                 using (var conn = Conexao.GetConnection())
@@ -121,7 +126,8 @@ namespace WinFormsApp1
                     conn.Open();
                     string sql = "DELETE FROM Pessoas WHERE id_pessoas =@Id";
 
-                    using (var cmd = new MySqlCommand(sql, conn)) {
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
 
                         cmd.Parameters.AddWithValue("@Id", pessoas.Id);
                         cmd.ExecuteNonQuery();
@@ -129,7 +135,51 @@ namespace WinFormsApp1
                 }
 
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Erro: " + ex.Message);
+            }
+        }
+
+        private void btnEditarPessoas_Click(object sender, EventArgs e)
+        {
+
+            Pessoas pessoas = new Pessoas();
+       
+            ListView.SelectedListViewItemCollection ItensSelecionados = lstPessoas.SelectedItems;
+            foreach (ListViewItem item in ItensSelecionados)
+            {
+
+
+             
+                pessoas.Id = txtIdPessoas.Text;
+                pessoas.nome_pessoas = txtNomePessoas.Text;
+                pessoas.email_pessoas = txtEmailPessoas.Text;
+            }
+
+            try
+            {using ( var conn = Conexao.GetConnection())
+                {
+                    conn.Open();
+                    string sql = "UPDATE Pessoas  SET nome_pessoas = @pessoasnome_pessoas, email_pessoas = @pessoasemail_pessoas  WHERE id_pessoas = @pessoasId";
+
+
+                    using (var cmd = new MySqlCommand(sql, conn))
+                    {
+
+                        cmd.Parameters.AddWithValue("@pessoasId", pessoas.Id);
+                        cmd.Parameters.AddWithValue("@pessoasnome_pessoas", pessoas.nome_pessoas);
+                        cmd.Parameters.AddWithValue("@pessoasemail_pessoas", pessoas.email_pessoas);
+                        cmd.ExecuteNonQuery();
+                    }
+                    MessageBox.Show("Update realizado");
+
+                }
+                
+            }
+            catch (Exception ex)
+            {
 
                 MessageBox.Show("Erro: " + ex.Message);
             }

@@ -36,6 +36,7 @@
             txtIdPessoas = new TextBox();
             txtEmailPessoas = new TextBox();
             btnExcuirPessoas = new Button();
+            btnEditarPessoas = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -110,11 +111,22 @@
             btnExcuirPessoas.UseVisualStyleBackColor = false;
             btnExcuirPessoas.Click += btnExcuirPessoas_Click;
             // 
+            // btnEditarPessoas
+            // 
+            btnEditarPessoas.Location = new Point(626, 278);
+            btnEditarPessoas.Name = "btnEditarPessoas";
+            btnEditarPessoas.Size = new Size(94, 29);
+            btnEditarPessoas.TabIndex = 12;
+            btnEditarPessoas.Text = "Editar";
+            btnEditarPessoas.UseVisualStyleBackColor = true;
+            btnEditarPessoas.Click += btnEditarPessoas_Click;
+            // 
             // frmListaPessoas
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 537);
+            Controls.Add(btnEditarPessoas);
             Controls.Add(btnExcuirPessoas);
             Controls.Add(txtEmailPessoas);
             Controls.Add(txtIdPessoas);
@@ -141,5 +153,6 @@
         private TextBox txtIdPessoas;
         private TextBox txtEmailPessoas;
         private Button btnExcuirPessoas;
+        private Button btnEditarPessoas;
     }
 }
