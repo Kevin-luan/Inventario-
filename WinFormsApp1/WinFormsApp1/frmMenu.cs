@@ -20,7 +20,14 @@ namespace WinFormsApp1
         private void btnFrmListPessoas_Click(object sender, EventArgs e)
         {
             frmListaPessoas frm = new frmListaPessoas();
-           frm.Show();
+            frm.Show();
+            this.Hide();
+        }
+
+        private void btnEquipamentoTi_Click(object sender, EventArgs e)
+        {
+            frmEquipamentoDeTi frm = new frmEquipamentoDeTi();
+            frm.Show();
             this.Hide();
         }
     }

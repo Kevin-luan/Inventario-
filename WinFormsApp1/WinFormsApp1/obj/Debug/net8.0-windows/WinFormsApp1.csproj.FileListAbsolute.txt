@@ -24,3 +24,5 @@ C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debu
 C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmMenu.resources
 C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.Properties.Resources.resources
 C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmEditarPessoas.resources
+C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmEquipamentoDeTi.resources
+C:\Users\supor\OneDrive\Documentos\Inventario\WinFormsApp1\WinFormsApp1\obj\Debug\net8.0-windows\WinFormsApp1.frmCadastrarEquipamentoDeTi.resources

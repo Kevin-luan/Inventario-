@@ -26,11 +26,7 @@ namespace WinFormsApp1
                 pessoas.nome_pessoas = txbNome.Text;
                 pessoas.email_pessoas = txbEmail.Text;
             };
-            
-            
-
-
-           
+                       
             if (pessoas.nome_pessoas == "")
             {
                 MessageBox.Show("todos os campos devem ser preenchidos");

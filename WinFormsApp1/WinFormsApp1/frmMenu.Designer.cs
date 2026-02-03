@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMenu));
             btnFrmListPessoas = new Button();
+            btnEquipamentoTi = new Button();
             SuspendLayout();
             // 
             // btnFrmListPessoas
@@ -45,11 +46,24 @@
             btnFrmListPessoas.UseVisualStyleBackColor = true;
             btnFrmListPessoas.Click += btnFrmListPessoas_Click;
             // 
+            // btnEquipamentoTi
+            // 
+            btnEquipamentoTi.Location = new Point(161, 27);
+            btnEquipamentoTi.Name = "btnEquipamentoTi";
+            btnEquipamentoTi.Size = new Size(123, 174);
+            btnEquipamentoTi.TabIndex = 1;
+            btnEquipamentoTi.Text = "Equipamento de TI";
+            btnEquipamentoTi.TextAlign = ContentAlignment.BottomCenter;
+            btnEquipamentoTi.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnEquipamentoTi.UseVisualStyleBackColor = true;
+            btnEquipamentoTi.Click += btnEquipamentoTi_Click;
+            // 
             // frmMenu
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnEquipamentoTi);
             Controls.Add(btnFrmListPessoas);
             Name = "frmMenu";
             Text = "frmMenu";
@@ -59,5 +73,6 @@
         #endregion
 
         private Button btnFrmListPessoas;
+        private Button btnEquipamentoTi;
     }
 }
