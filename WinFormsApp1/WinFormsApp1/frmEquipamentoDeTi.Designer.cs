@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             btnCadastarEquipamento = new Button();
+            lstEquipamentosTi = new ListView();
             SuspendLayout();
             // 
             // btnCadastarEquipamento
@@ -41,19 +42,31 @@
             btnCadastarEquipamento.UseVisualStyleBackColor = true;
             btnCadastarEquipamento.Click += btnCadastarEquipamento_Click;
             // 
+            // lstEquipamentosTi
+            // 
+            lstEquipamentosTi.Location = new Point(12, 12);
+            lstEquipamentosTi.Name = "lstEquipamentosTi";
+            lstEquipamentosTi.Size = new Size(441, 337);
+            lstEquipamentosTi.TabIndex = 1;
+            lstEquipamentosTi.UseCompatibleStateImageBehavior = false;
+            lstEquipamentosTi.SelectedIndexChanged += lstEquipamentosTi_SelectedIndexChanged;
+            // 
             // frmEquipamentoDeTi
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(lstEquipamentosTi);
             Controls.Add(btnCadastarEquipamento);
             Name = "frmEquipamentoDeTi";
-            Text = "frmEquipamentoDeTi";
+            Text = " ";
+            Load += frmEquipamentoDeTi_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
         private Button btnCadastarEquipamento;
+        private ListView lstEquipamentosTi;
     }
 }

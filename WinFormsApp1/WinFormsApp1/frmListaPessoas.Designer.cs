@@ -49,6 +49,7 @@
             lstPessoas.TabIndex = 0;
             lstPessoas.UseCompatibleStateImageBehavior = false;
             lstPessoas.ItemSelectionChanged += lstPessoas_ItemSelectionChanged;
+            lstPessoas.SelectedIndexChanged += lstPessoas_SelectedIndexChanged;
             // 
             // btnVoltarfrmMenu
             // 

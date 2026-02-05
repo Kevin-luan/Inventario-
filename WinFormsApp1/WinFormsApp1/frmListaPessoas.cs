@@ -146,20 +146,21 @@ namespace WinFormsApp1
         {
 
             Pessoas pessoas = new Pessoas();
-       
+
             ListView.SelectedListViewItemCollection ItensSelecionados = lstPessoas.SelectedItems;
             foreach (ListViewItem item in ItensSelecionados)
             {
 
 
-             
+
                 pessoas.Id = txtIdPessoas.Text;
                 pessoas.nome_pessoas = txtNomePessoas.Text;
                 pessoas.email_pessoas = txtEmailPessoas.Text;
             }
 
             try
-            {using ( var conn = Conexao.GetConnection())
+            {
+                using (var conn = Conexao.GetConnection())
                 {
                     conn.Open();
                     string sql = "UPDATE Pessoas  SET nome_pessoas = @pessoasnome_pessoas, email_pessoas = @pessoasemail_pessoas  WHERE id_pessoas = @pessoasId";
@@ -176,13 +177,18 @@ namespace WinFormsApp1
                     MessageBox.Show("Update realizado");
 
                 }
-                
+
             }
             catch (Exception ex)
             {
 
                 MessageBox.Show("Erro: " + ex.Message);
             }
+        }
+
+        private void lstPessoas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
