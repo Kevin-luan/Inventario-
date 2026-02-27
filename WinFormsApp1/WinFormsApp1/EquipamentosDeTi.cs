@@ -8,7 +8,7 @@ namespace WinFormsApp1
 {
     internal class EquipamentosDeTi
     {
-
+        public int? idEquipamento {  get; set; }
         public string? Nome_equipamento { get; set; }
         public int? Quantidade { get; set; }
         public string? Modelo {  get; set; }

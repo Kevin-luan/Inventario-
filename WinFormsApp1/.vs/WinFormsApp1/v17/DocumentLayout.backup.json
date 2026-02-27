@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\supor\\OneDrive\\Documentos\\inventario\\Inventario-\\WinFormsApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\supor\\onedrive\\documentos\\inventario\\winformsapp1\\winformsapp1\\frmequipamentodeti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\supor\\onedrive\\documentos\\inventario\\inventario-\\winformsapp1\\winformsapp1\\frmequipamentodeti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\frmequipamentodeti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\supor\\onedrive\\documentos\\inventario\\winformsapp1\\winformsapp1\\frmlistapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\frmlistapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\supor\\onedrive\\documentos\\inventario\\winformsapp1\\winformsapp1\\frmlistapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\frmlistapessoas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\supor\\onedrive\\documentos\\inventario\\winformsapp1\\winformsapp1\\frmequipamentodeti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0C904663-CA9A-4BB5-892D-B21DA5B546C9}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\frmequipamentodeti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,57 +14,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmListaPessoas.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmListaPessoas.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\frmListaPessoas.cs",
-              "ToolTip": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmListaPessoas.cs [Projeto]",
-              "RelativeToolTip": "WinFormsApp1\\frmListaPessoas.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T15:03:43.339Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "frmListaPessoas.cs",
-              "DocumentMoniker": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmListaPessoas.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\frmListaPessoas.cs",
-              "ToolTip": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmListaPessoas.cs",
-              "RelativeToolTip": "WinFormsApp1\\frmListaPessoas.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAL4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T14:28:06.426Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmEquipamentoDeTi.cs",
-              "DocumentMoniker": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs",
+              "DocumentMoniker": "C:\\Users\\supor\\OneDrive\\Documentos\\inventario\\Inventario-\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs",
               "RelativeDocumentMoniker": "WinFormsApp1\\frmEquipamentoDeTi.cs",
-              "ToolTip": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs",
+              "ToolTip": "C:\\Users\\supor\\OneDrive\\Documentos\\inventario\\Inventario-\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs",
               "RelativeToolTip": "WinFormsApp1\\frmEquipamentoDeTi.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAIA6wB4AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAA7wH0AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T14:18:34.45Z",
+              "WhenOpened": "2026-02-27T16:18:20.616Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmEquipamentoDeTi.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs",
-              "RelativeDocumentMoniker": "WinFormsApp1\\frmEquipamentoDeTi.cs",
-              "ToolTip": "C:\\Users\\supor\\OneDrive\\Documentos\\Inventario\\WinFormsApp1\\WinFormsApp1\\frmEquipamentoDeTi.cs [Projeto]",
-              "RelativeToolTip": "WinFormsApp1\\frmEquipamentoDeTi.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-05T14:15:39.28Z",
-              "EditorCaption": " [Projeto]"
             }
           ]
         }

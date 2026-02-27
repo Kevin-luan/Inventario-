@@ -35,13 +35,14 @@
             txbModeloEquipamentoTi = new TextBox();
             lblQuantEquipamentoTi = new Label();
             txbQuantidade = new TextBox();
+            btnVoltar = new Button();
             SuspendLayout();
             // 
             // btbCadastrarEquipamentoDeTI
             // 
-            btbCadastrarEquipamentoDeTI.Location = new Point(39, 335);
+            btbCadastrarEquipamentoDeTI.Location = new Point(101, 307);
             btbCadastrarEquipamentoDeTI.Name = "btbCadastrarEquipamentoDeTI";
-            btbCadastrarEquipamentoDeTI.Size = new Size(208, 75);
+            btbCadastrarEquipamentoDeTI.Size = new Size(124, 60);
             btbCadastrarEquipamentoDeTI.TabIndex = 0;
             btbCadastrarEquipamentoDeTI.Text = "Cadastrar";
             btbCadastrarEquipamentoDeTI.UseVisualStyleBackColor = true;
@@ -95,11 +96,22 @@
             txbQuantidade.Size = new Size(198, 30);
             txbQuantidade.TabIndex = 6;
             // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(286, 396);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(111, 42);
+            btnVoltar.TabIndex = 7;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
             // frmCadastrarEquipamentoDeTi
             // 
             AutoScaleDimensions = new SizeF(9F, 23F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(409, 450);
+            Controls.Add(btnVoltar);
             Controls.Add(txbQuantidade);
             Controls.Add(lblQuantEquipamentoTi);
             Controls.Add(txbModeloEquipamentoTi);
@@ -122,5 +134,6 @@
         private TextBox txbModeloEquipamentoTi;
         private Label lblQuantEquipamentoTi;
         private TextBox txbQuantidade;
+        private Button btnVoltar;
     }
 }

@@ -133,7 +133,7 @@ namespace WinFormsApp1
                         cmd.ExecuteNonQuery();
                     }
                 }
-
+                MessageBox.Show("Deletado com sucesso" );
             }
             catch (Exception ex)
             {

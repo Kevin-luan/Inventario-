@@ -21,9 +21,9 @@ namespace WinFormsApp1
         private void btbCadastrarEquipamentoDeTI_Click(object sender, EventArgs e)
         {
             EquipamentosDeTi equipamentosDeTi = new EquipamentosDeTi();
-                 equipamentosDeTi.Nome_equipamento = txbNomeEquipamentoTi.Text;
-                 equipamentosDeTi.Modelo = txbModeloEquipamentoTi.Text;
-                 equipamentosDeTi.Quantidade = int.Parse(txbQuantidade.Text);
+            equipamentosDeTi.Nome_equipamento = txbNomeEquipamentoTi.Text;
+            equipamentosDeTi.Modelo = txbModeloEquipamentoTi.Text;
+            equipamentosDeTi.Quantidade = int.Parse(txbQuantidade.Text);
 
 
 
@@ -60,6 +60,13 @@ namespace WinFormsApp1
 
                 MessageBox.Show("Erro: " + ex.Message);
             }
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            frmEquipamentoDeTi frm = new frmEquipamentoDeTi();
+            frm.Show();
+            this.Hide();
         }
     }
 }
